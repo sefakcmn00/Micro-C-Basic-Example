@@ -1,0 +1,119 @@
+
+_main:
+
+;_2LI_KAVSAK_TRAFIK.c,1 :: 		void main() {
+;_2LI_KAVSAK_TRAFIK.c,2 :: 		TRISA=0B00000000;
+	CLRF       TRISA+0
+;_2LI_KAVSAK_TRAFIK.c,3 :: 		TRISB=0B00000000;
+	CLRF       TRISB+0
+;_2LI_KAVSAK_TRAFIK.c,4 :: 		PORTA=0;
+	CLRF       PORTA+0
+;_2LI_KAVSAK_TRAFIK.c,5 :: 		PORTB=0;
+	CLRF       PORTB+0
+;_2LI_KAVSAK_TRAFIK.c,6 :: 		CMCON=7;
+	MOVLW      7
+	MOVWF      CMCON+0
+;_2LI_KAVSAK_TRAFIK.c,7 :: 		while(1)
+L_main0:
+;_2LI_KAVSAK_TRAFIK.c,9 :: 		PORTA.RA0=1;
+	BSF        PORTA+0, 0
+;_2LI_KAVSAK_TRAFIK.c,10 :: 		PORTB.RB2=1;
+	BSF        PORTB+0, 2
+;_2LI_KAVSAK_TRAFIK.c,11 :: 		DELAY_MS(2000);
+	MOVLW      11
+	MOVWF      R11+0
+	MOVLW      38
+	MOVWF      R12+0
+	MOVLW      93
+	MOVWF      R13+0
+L_main2:
+	DECFSZ     R13+0, 1
+	GOTO       L_main2
+	DECFSZ     R12+0, 1
+	GOTO       L_main2
+	DECFSZ     R11+0, 1
+	GOTO       L_main2
+	NOP
+	NOP
+;_2LI_KAVSAK_TRAFIK.c,12 :: 		PORTA.RA0=0;
+	BCF        PORTA+0, 0
+;_2LI_KAVSAK_TRAFIK.c,13 :: 		PORTB.RB2=0;
+	BCF        PORTB+0, 2
+;_2LI_KAVSAK_TRAFIK.c,14 :: 		PORTA.RA1=1;
+	BSF        PORTA+0, 1
+;_2LI_KAVSAK_TRAFIK.c,15 :: 		PORTB.RB1=1;
+	BSF        PORTB+0, 1
+;_2LI_KAVSAK_TRAFIK.c,16 :: 		DELAY_MS(1000);
+	MOVLW      6
+	MOVWF      R11+0
+	MOVLW      19
+	MOVWF      R12+0
+	MOVLW      173
+	MOVWF      R13+0
+L_main3:
+	DECFSZ     R13+0, 1
+	GOTO       L_main3
+	DECFSZ     R12+0, 1
+	GOTO       L_main3
+	DECFSZ     R11+0, 1
+	GOTO       L_main3
+	NOP
+	NOP
+;_2LI_KAVSAK_TRAFIK.c,17 :: 		PORTA.RA1=0;
+	BCF        PORTA+0, 1
+;_2LI_KAVSAK_TRAFIK.c,18 :: 		PORTB.RB1=0;
+	BCF        PORTB+0, 1
+;_2LI_KAVSAK_TRAFIK.c,19 :: 		PORTA.RA2=1;
+	BSF        PORTA+0, 2
+;_2LI_KAVSAK_TRAFIK.c,20 :: 		PORTB.RB0=1;
+	BSF        PORTB+0, 0
+;_2LI_KAVSAK_TRAFIK.c,21 :: 		DELAY_MS(2000);
+	MOVLW      11
+	MOVWF      R11+0
+	MOVLW      38
+	MOVWF      R12+0
+	MOVLW      93
+	MOVWF      R13+0
+L_main4:
+	DECFSZ     R13+0, 1
+	GOTO       L_main4
+	DECFSZ     R12+0, 1
+	GOTO       L_main4
+	DECFSZ     R11+0, 1
+	GOTO       L_main4
+	NOP
+	NOP
+;_2LI_KAVSAK_TRAFIK.c,22 :: 		PORTA.RA2=0;
+	BCF        PORTA+0, 2
+;_2LI_KAVSAK_TRAFIK.c,23 :: 		PORTB.RB0=0;
+	BCF        PORTB+0, 0
+;_2LI_KAVSAK_TRAFIK.c,24 :: 		PORTA.RA1=1;
+	BSF        PORTA+0, 1
+;_2LI_KAVSAK_TRAFIK.c,25 :: 		PORTB.RB1=1;
+	BSF        PORTB+0, 1
+;_2LI_KAVSAK_TRAFIK.c,26 :: 		DELAY_MS(1000);
+	MOVLW      6
+	MOVWF      R11+0
+	MOVLW      19
+	MOVWF      R12+0
+	MOVLW      173
+	MOVWF      R13+0
+L_main5:
+	DECFSZ     R13+0, 1
+	GOTO       L_main5
+	DECFSZ     R12+0, 1
+	GOTO       L_main5
+	DECFSZ     R11+0, 1
+	GOTO       L_main5
+	NOP
+	NOP
+;_2LI_KAVSAK_TRAFIK.c,27 :: 		PORTA.RA1=0;
+	BCF        PORTA+0, 1
+;_2LI_KAVSAK_TRAFIK.c,28 :: 		PORTB.RB1=0;
+	BCF        PORTB+0, 1
+;_2LI_KAVSAK_TRAFIK.c,32 :: 		}
+	GOTO       L_main0
+;_2LI_KAVSAK_TRAFIK.c,33 :: 		}
+L_end_main:
+	GOTO       $+0
+; end of _main

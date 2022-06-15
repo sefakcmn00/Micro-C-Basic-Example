@@ -1,0 +1,9 @@
+[PROJECTS]
+Count=5
+Project0=..\..\..\..\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Examples\Development Systems\EasyPIC v8\Led Blinking\LedBlinking.mcppi
+Project1=..\LED_YAKMA\LED_YAKMA.mcppi
+Project2=..\KARASÝMSEK\KARA_SIMSEK.mcppi
+Project3=..\TRAFIK_LAMBASI\TRAFIK_LAMBASI.mcppi
+Project4=TRAFIK_LAMBASI.mcppi
+[ActiveProject]
+Index=4

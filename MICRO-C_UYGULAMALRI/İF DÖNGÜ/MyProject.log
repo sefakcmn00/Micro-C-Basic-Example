@@ -1,0 +1,11 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP16F628A -DL -O11111114 -fo4 -N"C:\Users\ASUS\Desktop\MICRO-C\ÝF DÖNGÜ\MyProject.mcppi" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" -SP"C:\Users\ASUS\Desktop\MICRO-C\ÝF DÖNGÜ\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" "_F_DONGU.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl"	 
+hint: 0	1139	Available RAM: 208 [bytes], Available ROM: 2048 [bytes]	 
+diagnostics: 0	122	Compilation Started	_F_DONGU.c
+diagnostics: 29	123	Compiled Successfully	_F_DONGU.c
+diagnostics: 0	127	All files Compiled in 62 ms	 
+hint: 0	1144	Used RAM (bytes): 2 (1%)  Free RAM (bytes): 206 (99%)	Used RAM (bytes): 2 (1%)  Free RAM (bytes): 206 (99%)
+hint: 0	1144	Used ROM (program words): 77 (4%)  Free ROM (program words): 1971 (96%)	Used ROM (program words): 77 (4%)  Free ROM (program words): 1971 (96%)
+diagnostics: 0	125	Project Linked Successfully	MyProject.mcppi
+diagnostics: 0	128	Linked in 32 ms	 
+diagnostics: 0	129	Project 'MyProject.mcppi' completed: 250 ms	 
+diagnostics: 0	103	Finished successfully: 09 Oca 2021, 23:20:29	MyProject.mcppi
